@@ -23,7 +23,7 @@ namespace UnitTests
         public void TestMergeArraysForNull1()
         {
             int[] array1 = { };
-            int[] array2 = { 1, 2, 3, 9};
+            int[] array2 = { 1, 2, 3, 9 };
             int[] expectedResult = { 1, 2, 3, 9 };
             var result = Program.MergeSortedArrays(array1, array2);
             TestArraysForEquality(expectedResult, result);
@@ -45,8 +45,8 @@ namespace UnitTests
         public void TestMergeArrays1()
         {
             int[] array1 = { 1, 2, 3, 9 };
-            int[] array2 = { 4 , 6, 10, 12, 14, 16, 18, 21};
-            int[] expectedResult = { 1,2,3,4,6,9,10,12,14,16,18,21};
+            int[] array2 = { 4, 6, 10, 12, 14, 16, 18, 21 };
+            int[] expectedResult = { 1, 2, 3, 4, 6, 9, 10, 12, 14, 16, 18, 21 };
             var result = Program.MergeSortedArrays(array1, array2);
             TestArraysForEquality(expectedResult, result);
 
@@ -66,9 +66,9 @@ namespace UnitTests
         [TestMethod]
         public void TestMergeArrays3()
         {
-            int[] array1 = {0,0,0,0};
-            int[] array2 = { 0,0,0,0 };
-            int[] expectedResult = { 0,0,0,0,0,0,0,0 };
+            int[] array1 = { 0, 0, 0, 0 };
+            int[] array2 = { 0, 0, 0, 0 };
+            int[] expectedResult = { 0, 0, 0, 0, 0, 0, 0, 0 };
             var result = Program.MergeSortedArrays(array1, array2);
             TestArraysForEquality(expectedResult, result);
 
@@ -78,7 +78,7 @@ namespace UnitTests
         public void TestMergeArrays4()
         {
             int[] array1 = { 0, 0, 0, 0 };
-            int[] array2 = { 1, 1, 1, 1};
+            int[] array2 = { 1, 1, 1, 1 };
             int[] expectedResult = { 0, 0, 0, 0, 1, 1, 1, 1 };
             var result = Program.MergeSortedArrays(array1, array2);
             TestArraysForEquality(expectedResult, result);
@@ -90,7 +90,7 @@ namespace UnitTests
         {
             int[] array1 = { 0, 2, 4, 6 };
             int[] array2 = { 1, 3, 5, 7 };
-            int[] expectedResult = {0,1,2,3,4,5,6,7};
+            int[] expectedResult = { 0, 1, 2, 3, 4, 5, 6, 7 };
             var result = Program.MergeSortedArrays(array1, array2);
             TestArraysForEquality(expectedResult, result);
 
